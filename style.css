@@ -1,0 +1,97 @@
+/****************
+    GENREAL
+*****************/
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'montserrat';
+    font-weight: 200;
+    background: #00d2ff; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #00d2ff , #3a7bd5); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #00d2ff , #3a7bd5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */   
+}
+
+/******************
+    TO DO LIST
+*******************/
+
+#container{
+    width: 300px;
+    background: #f7f7f7;
+    margin: 0 auto;
+    box-shadow: 0 0 3px rgba(0,0,0, 0.1);
+    margin-top: 100px;
+}
+
+h1{
+    font-size: 20px;
+    font-weight: 400;
+    text-transform: uppercase;
+    background: #FF6766;
+    color: #fff;
+    margin: 0;
+    padding: 10px 20px;
+    
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+
+li{
+  background: #fff;
+  height: 30px;
+  line-height: 30px; 
+  color: #666;
+}
+
+/* select every two 'li' */
+li:nth-child(2n){
+  background: #f7f7f7;
+}
+
+input{
+  font-family: Raleway;
+  font-size: 18px;
+  background: #f7f7f7;
+  color: #FF6766;
+  width: 100%;
+  padding: 6px;
+  box-sizing: border-box;
+  border: 2px solid rgba(0,0,0,0);
+}
+
+input:focus {
+  background: #fff;
+  border: 2px solid #FF6766;
+  outline: none; /* disable auto highlight */
+}
+
+.fa-minus{
+    float: right;
+}
+
+span{
+    background: #FF6766;
+    height: 30px;
+    margin-right: 20px;
+    text-align: center;
+    color: #fff;
+    width: 0; /* hide delete icon */
+    display: inline-block;
+    transition: 0.2s linear; /* slow effect when delete*/
+    opacity: 0; /* disable icon */
+}
+
+li:hover span{
+    width: 30px; /* appear delete icon when hover */
+    opacity: 1; /*enable icon when hover */
+}
+
+.completed{
+    color: gray;
+    text-decoration: line-through;
+}
