@@ -1,5 +1,5 @@
 $(document).ready(function(){
-    $('ul').on('click','li',function(){
+    $('ul').on("click", "li", function(){
         $(this).toggleClass('completed');
     });
     
@@ -8,7 +8,7 @@ $(document).ready(function(){
         if(event.which === 13){ // if user hit 'enter = 13'
             var inputTextBox = $(this).val(); // get value from 'input'
             // attach new value from 'input' under 'ul' tag
-            $('ul').append('<li><i class="fa fa-trash"></i>' + inputTextBox + '</li>')
+            $('ul').append('<li><span><i class="fa fa-trash"></i></span>' + inputTextBox + '</li>')
             // reset to blank in 'input' after values added to 'ul'
             $(this).val('');
         }
